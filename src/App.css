@@ -18,11 +18,30 @@ background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, F
     height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .landing {
+        height: 100vh;
+    }
+  } 
+
+
 .projects-grid {
     display: flex;
 }
 
+@media only screen and (max-width: 768px) {
+    .projects {
+        height: 100vh;
+    }
+}
+
 /* resume page css */
+
+@media only screen and (max-width: 768px) {
+    .resume-media {
+        height: 100vh;
+    }
+  } 
 
 .resume-right-col {
     background: #27221f;
@@ -30,7 +49,35 @@ background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, F
     padding: 2em;
 }
 
+/* resume page css*/
+
+/* about me css */
+
+@media only screen and (max-width: 768px) {
+    .about-me {
+        height: 100vh;
+    }
+  } 
+.about-me-para {
+background: #27221f;
+    color: white;
+    padding: 2em;
+}
+/* about me css */
+
 /* contact page css */
+
+.my-dog {
+    height: 250px;
+    padding-top: 5em;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-body {
+        height: 100vh;
+    }
+}
 
 .contact-body {
     margin: auto;
@@ -61,14 +108,13 @@ background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, F
 }
 
 .contact-grid hr {
-    border-top: 5px dotted black;
     width: 50%;
     margin: auto;
 }
 
 .contact-list i {
-    font-size: 66px;
-    padding-right: 5rem;
+    font-size: 60px;
+    padding-right: 3px;
 }
 
 

@@ -7,7 +7,7 @@ import Skills from './skills';
 class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className='resume-media'>
                 <Grid>
                     <Cell col={4}>
                         <div style={{ textAlign: 'center' }}>
@@ -18,17 +18,15 @@ class Resume extends Component {
                         <h4 style={{ color: 'grey' }}>Software Developer</h4>
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                         <h5>Address</h5>
-                        <p>Flat 13, Dinmore House, Templecombe Road, London</p>
+                        <p>Flat 13, Dinmore House, Templecombe Road, Hackney, London</p>
                         <h5>Phone</h5>
                         <p>07753 142564</p>
                         <h5>Email</h5>
                         <p>adam.horscraft@gmail.com</p>
-                        <h5>Webiste</h5>
-                        <p>mywebsite.com</p>
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
                     </Cell>
-                    <Cell className='resume-right-col' col={4}>
+                    <Cell className='resume-right-col' col={8}>
                         <h2>Education</h2>
 
                         <Education
@@ -43,21 +41,21 @@ class Resume extends Component {
 
                         <Experience
                             startYear={2020}
-                            endYear={2020}
+                            endYear={'Present'}
                             jobDescription={'CodeNation - Junior Software Developer'}
                         />
 
                         <Experience
                             startYear={2017}
                             endYear={2020}
-                            jobDescription={'Recruitment Consultant'}
+                            jobDescription={'IT Recruitment Consultant'}
                         />
 
                         <hr style={{ borderTop: '3px solid #e22947' }} />
                         <h2>Skills</h2>
                         <Skills
                             skill='Javascript'
-                            progress={100}
+                            progress={80}
                         />
                         <Skills
                             skill='NodeJS'

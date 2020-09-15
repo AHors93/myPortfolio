@@ -8,13 +8,15 @@ class Contact extends Component {
                 <Grid className='contact-grid'>
                     <Cell col={6}>
                         <h2>Adam Horscraft</h2>
-
-                        <p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>Some stuff to go here....</p>
-
+                        <img
+                            src='https://pbs.twimg.com/profile_images/1275512987470770183/5K23CgaI_400x400.jpg'
+                            alt='me'
+                            className='my-dog'
+                        />
                     </Cell>
                     <Cell col={6}>
                         <h2>Contact Me</h2>
-                        <hr />
+                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
                         <div className='contact-list'>
                             <List>

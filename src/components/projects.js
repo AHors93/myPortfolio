@@ -19,7 +19,7 @@ class Projects extends Component {
                             My first react project
                     </CardText>
                         <CardActions border>
-                            <Button colored>Github</Button>
+                            <Button colored href='https://github.com/AHors93/basicCalculator' rel='noopener noreferrer' target='_blank'>Github</Button>
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                             <IconButton name='share' />
@@ -32,7 +32,7 @@ class Projects extends Component {
                             To-Do-List
                     </CardText>
                         <CardActions border>
-                            <Button colored>Github</Button>
+                            <Button colored href='https://github.com/AHors93/todolist' rel='noopener noreferrer' target='_blank'>Github</Button>
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                             <IconButton name='share' />
@@ -42,10 +42,28 @@ class Projects extends Component {
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >React Project #3</CardTitle>
                         <CardText>
-                            Address Book - First Full Stack Project
+                            Built my first restfulAPI in React
                     </CardText>
                         <CardActions border>
-                            <Button colored>Github</Button>
+                            <Button colored href='https://github.com/AHors93/restfulAPI' rel='noopener noreferrer' target='_blank'>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+                </div >
+            )
+        } else if (this.state.activeTab === 1) {
+            return (
+                <div>
+                    {/* MongoDB Project 1 */}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >MongoBD Project #1</CardTitle>
+                        <CardText>
+                            Address Book - First Full Stack Project using MongoDB
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href='https://github.com/AHors93/addressBook' rel='noopener noreferrer' target='_blank'>Github</Button>
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                             <IconButton name='share' />
@@ -53,9 +71,23 @@ class Projects extends Component {
                     </Card>
                 </div>
             )
-        } else if (this.state.activeTab === 1) {
+        } else if (this.state.activeTab === 2) {
             return (
-                <div><h1>This is MongoDB</h1></div>
+                <div>
+                    {/* Full Stack Project 1 */}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >Full Stack Project #1</CardTitle>
+                        <CardText>
+                            Food Deal App - Started 14th Sep 2020 - nothing on Github just yet...
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href='' rel='noopener noreferrer' target='_blank'>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+                </div>
             )
         }
 
@@ -63,20 +95,23 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className='category-tabs'>
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>React</Tab>
-                    <Tab>MongoDB</Tab>
-                </Tabs>
+            <div className='projects'>
+                <div className='category-tabs'>
+                    <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                        <Tab>React</Tab>
+                        <Tab>MongoDB</Tab>
+                        <Tab>Full Stack</Tab>
+                    </Tabs>
 
 
-                <Grid>
-                    <Cell col={12}>
-                        <div className='content'>{this.toggleCategories()}</div>
-                    </Cell>
-                </Grid>
+                    <Grid>
+                        <Cell col={12}>
+                            <div className='content'>{this.toggleCategories()}</div>
+                        </Cell>
+                    </Grid>
 
-            </div>
+                </div>
+            </div >
         )
     }
 
