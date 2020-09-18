@@ -7,7 +7,7 @@ class Contact extends Component {
             <div className='contact-body'>
                 <Grid className='contact-grid'>
                     <Cell col={6}>
-                        <h2>Adam Horscraft</h2>
+                        <h2 className='my-name'>Adam Horscraft</h2>
                         <img
                             src='https://pbs.twimg.com/profile_images/1275512987470770183/5K23CgaI_400x400.jpg'
                             alt='me'
@@ -15,30 +15,31 @@ class Contact extends Component {
                         />
                     </Cell>
                     <Cell col={6}>
-                        <h2>Contact Me</h2>
+                        <h2 className='contact-me'>Contact Me</h2>
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 
                         <div className='contact-list'>
                             <List>
                                 <ListItem>
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Roboto' }}>
-                                        <i className='fa fa-phone-square' aria-hidden='true' />
-                                        07753 142 564
-                                        </ListItemContent>
+                                    <ListItemContent>
+                                        <div className='details'>
+                                            <i className='fa fa-phone-square' aria-hidden='true' />
+                                            <p className='my-number'>07753 142 564</p>
+                                        </div>
+                                    </ListItemContent>
                                 </ListItem>
 
                                 <ListItem>
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Roboto' }}>
-                                        <i className='fa fa-envelope-square' aria-hidden='true' />
-                                        adam.horscraft@gmail.com
-                                        </ListItemContent>
+                                    <ListItemContent>
+                                        <div className='details'>
+                                            <i className='fa fa-envelope-square' aria-hidden='true' />
+                                            <p className='my-email'>adam.horscraft@gmail.com</p>
+                                        </div>
+                                    </ListItemContent>
                                 </ListItem>
                             </List>
 
                         </div>
-
-
-
                     </Cell>
                 </Grid>
             </div>

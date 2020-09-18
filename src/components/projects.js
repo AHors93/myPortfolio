@@ -55,7 +55,7 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 1) {
             return (
-                <div>
+                <div className='projects-grid'>
                     {/* MongoDB Project 1 */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >MongoBD Project #1</CardTitle>
@@ -73,7 +73,7 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 2) {
             return (
-                <div>
+                <div className='projects-grid'>
                     {/* Full Stack Project 1 */}
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >Full Stack Project #1</CardTitle>
@@ -106,7 +106,7 @@ class Projects extends Component {
 
                     <Grid>
                         <Cell col={12}>
-                            <div className='content'>{this.toggleCategories()}</div>
+                            <div className='projects-content'>{this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
 

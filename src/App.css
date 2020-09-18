@@ -18,30 +18,20 @@ background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, F
     height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-    .landing {
-        height: 100vh;
-    }
-  } 
-
+/* Projects page CSS */
 
 .projects-grid {
     display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 768px) {
-    .projects {
-        height: 100vh;
-    }
+.category-tabs {
+    margin-top: 3em;
 }
+
+/* Projects page CSS */
 
 /* resume page css */
-
-@media only screen and (max-width: 768px) {
-    .resume-media {
-        height: 100vh;
-    }
-  } 
 
 .resume-right-col {
     background: #27221f;
@@ -53,11 +43,6 @@ background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, F
 
 /* about me css */
 
-@media only screen and (max-width: 768px) {
-    .about-me {
-        height: 100vh;
-    }
-  } 
 .about-me-para {
 background: #27221f;
     color: white;
@@ -68,16 +53,20 @@ background: #27221f;
 /* contact page css */
 
 .my-dog {
-    height: 250px;
-    padding-top: 5em;
+    height: 100px;
+    padding-top: 1em;
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
-    .contact-body {
-        height: 100vh;
-    }
+.my-name {
+    font-size: 25px;
 }
+
+.contact-me {
+    font-size: 25px;
+}
+
+
 
 .contact-body {
     margin: auto;
@@ -91,14 +80,14 @@ background: #27221f;
 .contact-grid {
     text-align: center;
     justify-content: center;
-    width: 80%;
-    height: 550px;
+    width: 100%;
+    height: 400px;
     background: white;
     color: black;
     margin-bottom: 20px;
 }
 
-.contact-grid h2 {
+.contact-grid p {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -112,17 +101,41 @@ background: #27221f;
     margin: auto;
 }
 
-.contact-list i {
-    font-size: 60px;
-    padding-right: 3px;
+.contact-list {
+    display: flex;
+    justify-content: center;
 }
 
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.my-number {
+    font-size: 15px;
+}
+
+.my-email {
+    font-size: 15px;
+}
+
+.contact-list i {
+    font-size: 66px;
+    padding-right: 2rem;
+}
+
+.contact-list p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: lighter;
+}
 
 /* contact page css */
 
+/* Landing Page */
+
 .avatar-img {
-    height: 250px;
-    padding-top: 5em;
+    height: 150px;
+    padding-top: 2em;
     border-radius: 50%;
 }
 
@@ -135,7 +148,7 @@ background: #27221f;
 }
 
 .banner-text h1 {
-    font-size: 66px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
 }
@@ -154,7 +167,7 @@ background: #27221f;
 
 .social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 20%;
     margin: auto;
 }
@@ -165,3 +178,57 @@ background: #27221f;
     padding: 8px;
 }
 
+/* Landing Page */
+
+@media only screen and (min-width: 1024px) {
+    .projects-grid {
+        display: flex;
+        flex-direction: row;
+    }
+    .avatar-img {
+        height: 250px;
+        padding-top: 5em;
+        border-radius: 50%;
+    }
+    .contact-body {
+        margin: auto;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding-top: 2em;
+    }
+    .contact-grid {
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        height: 550px;
+        background: white;
+        color: black;
+        margin-bottom: 20px;
+    }
+    .contact-list i {
+        font-size: 66px;
+        padding-right: 5rem;
+    }
+    .my-dog {
+        height: 250px;
+        padding-top: 4em;
+        border-radius: 50%;
+    }
+    
+    .my-name {
+        font-size: 45px;
+    }
+    
+    .contact-me {
+        font-size: 45px;
+    }
+    .my-number {
+        font-size: 30px;
+    }
+    
+    .my-email {
+        font-size: 30px;
+    } 
+}
