@@ -87,6 +87,20 @@ class Projects extends Component {
                             <IconButton name='share' />
                         </CardMenu>
                     </Card>
+                    {/* Full Stack Project 2 */}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://cdn.idevie.com/wp-content/uploads/2015/12/React.js_logo.svg_.png) center / cover' }} >Full Stack Project #2</CardTitle>
+                        <CardText>
+                            Online Bookmark - OneLink
+                    </CardText>
+                        <CardActions border>
+                            <Button colored href='https://github.com/Code-Nation-Final-Project' rel='noopener noreferrer' target='_blank'>Github</Button>
+                            <Button colored href='https://tender-ride-850528.netlify.app/' rel='noopener noreferrer' target='_blank'>Netlify</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
                 </div>
             )
         }
